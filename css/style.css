@@ -14,12 +14,12 @@ body {
 
 }
 
-
+/* WARNING HEADER======================================================= */
 header {
   width: 100%;
 }
 
-
+/* HEADER_TOP______________________________________________________________ */
 .header_top {
   display: flex;
   justify-content: space-around;
@@ -30,9 +30,6 @@ header {
   border-bottom: 1px solid #f2f4f3;
 }
 
-/* .header_top > div {
-  background-color: green;
-} */
 
 
 .header_top .logo img {
@@ -75,11 +72,38 @@ header {
   cursor: pointer;
 }
 
+/* FINE HEADER_TOP______________________________________________________________ */
+
+
+/* HEADER_NAV_________________________________________________________________ */
+
+.header_nav {
+  height: 60px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header_nav ul.nav_list {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.header_nav ul.nav_list li {
+  list-style: none;
+  color: #777777;
+  cursor: pointer;
+  padding: 0px 20px;
+  font-weight: 500;
+}
+
+.header_nav ul.nav_list li:hover {
+  color: black;
+  transition: 0.3s;
+}
 
 
 
-
-
-
-/* FONTAWESOME */
-/* <i class="far fa-user"></i> */
+/* FINE HEADER_NAV_________________________________________________________________ */
