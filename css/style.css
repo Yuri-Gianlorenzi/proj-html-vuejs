@@ -6,5 +6,80 @@
 }
 
 body {
-  background-color: coral;
+  background-color: #ffffff;
 }
+
+.container {
+  width: 100vw;
+
+}
+
+
+header {
+  width: 100%;
+}
+
+
+.header_top {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 70px;
+  background-color: #ffffff;
+  color: black;
+  border-bottom: 1px solid #f2f4f3;
+}
+
+/* .header_top > div {
+  background-color: green;
+} */
+
+
+.header_top .logo img {
+  height: 40px;
+}
+
+.header_top .search {
+  position: relative;
+
+}
+
+.header_top .search i {
+  font-size: 13px;
+  position: absolute;
+  left: 13px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.header_top .search input {
+  min-width: 300px;
+  padding: 10px;
+  border-radius: 40px;
+  background-color: #f2f4f3;
+  border: 1px solid rgba(121, 121, 121, 0);
+}
+
+.header_top .questions span {
+  font-weight: bold;
+}
+
+.header_top .user i {
+  font-size: 22px;
+  margin: 0px 10px;
+}
+
+.header_top span,
+.header_top i,
+.header_top .logo {
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+/* FONTAWESOME */
+/* <i class="far fa-user"></i> */
