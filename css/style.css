@@ -892,6 +892,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   color: #ffffff;
+  border-bottom: 2px solid #264229;
 }
 
 
@@ -957,3 +958,58 @@ footer {
 
 
 /* INFO SOCIAL_____________________________________________________________________ */
+.info_social {
+  color: #ffffff;
+}
+
+
+.info_social .nav_footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.info_social .nav_footer ul li {
+  list-style: none;
+  padding: 0px 20px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.info_social .nav_footer ul li:hover {
+  transition: 0.3s;
+  color: #49784d;
+}
+
+.info_social .nav_social ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+
+}
+
+.info_social .nav_social ul li {
+  list-style: none;
+  padding: 0px 20px;
+  cursor: pointer;
+  font-size: 18px;
+}
+.info_social .nav_social ul li:hover {
+  transition: 0.3s;
+  color: #49784d;
+}
+
+/* FOOTER BOTTOM __________________________________________________ */
+
+.footer_bottom {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
