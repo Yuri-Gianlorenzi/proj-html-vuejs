@@ -472,3 +472,109 @@ header {
   font-size: 15px;
   text-decoration: line-through;
 }
+
+/* TESTIMONIALS________________________________________________________________ */
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+}
+
+.testimonials .box_testimonials {
+  background-image: url("../img/bg-transparent-3.png");
+  background-repeat: repeat-x;
+  background-position: top;
+  background-color: #1e3020;
+  color: #ffffff;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.testimonials .box_testimonials h2 {
+  font-size: 50px;
+  font-weight: 400;
+}
+
+
+.testimonials .box_testimonials ul.testimonials_list {
+  width: 75%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.testimonials .box_testimonials ul.testimonials_list li {
+  flex-basis: calc(100% / 3);
+  text-align: center;
+  list-style: none;
+}
+
+.testimonials .box_testimonials ul.testimonials_list li img {
+  height: 110px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.testimonials .box_testimonials ul.testimonials_list li p {
+  line-height: 35px;
+  margin-bottom: 30px;
+}
+
+.testimonials .box_testimonials ul.testimonials_list li span {
+  color: #9ca481;
+}
+
+
+/* NEWSLETTER____________________________________________ */
+
+.box_newsletter {
+  width: 80%;
+  height: 400px;
+  background-image: url("../img/banner-7-2x-scaled.jpg");
+  background-size: cover;
+  /* position: absolute;
+  bottom: -350px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 60px;
+  margin-top: -40px;
+}
+
+.box_newsletter h2,
+.box_newsletter p,
+.box_newsletter .subs_box {
+  max-width: 50%;
+}
+
+.box_newsletter h2 {
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.box_newsletter p {
+  margin: 40px 0px;
+  line-height: 30px;
+}
+
+.box_newsletter .subs_box input {
+  min-width: 300px;
+  padding: 10px;
+  border-radius: 40px;
+  background-color: #f2f4f3;
+  border: 1px solid rgba(121, 121, 121, 0);
+}
+
+/* .tips {
+  display: block;
+  width: 100%;
+  height: 300px;
+  background-color: red;
+  } */
