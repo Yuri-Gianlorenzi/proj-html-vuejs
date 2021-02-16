@@ -7,6 +7,7 @@
 
 body {
   background-color: #ffffff;
+  overflow-x: hidden;
 }
 
 .container {
@@ -143,6 +144,245 @@ header {
 /* FINE HEADER_NAV_________________________________________________________________ */
 
 .header_bottom {
-  background-color: coral;
-  height: 50px;
+  /* background-color: coral; */
+  /* height: 50px; */
+}
+
+.header_bottom .services {
+  height: 60px;
+  width: 100%;
+  background-image: url("../img/bg-transparent-3.png");
+  background-repeat: repeat-x;
+  background-position: top;
+  background-color: #1e3020;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f2f4f3;
+}
+
+.header_bottom .services .list_services {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 0px 40px;
+
+}
+.header_bottom .services .list_services li {
+  list-style: none;
+  font-weight: 300;
+}
+
+.header_bottom .services .list_services li span {
+  font-weight: 500;
+}
+
+
+/* JUMBOTRON______________________________________ */
+.header_bottom .jumbotron {
+  height: 600px;
+  background-image: url("../img/jumbotron.webp");
+  background-position: center;
+  background-size: cover;
+}
+
+.header_bottom .jumbotron .jumbotron_box {
+  width: 100%;
+  height: 100%;
+  padding: 60px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.jumbotron_box p {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.jumbotron_box h1 {
+  font-size: 50px;
+  max-width: 50%;
+  margin: 50px 0px;
+}
+
+.button_w {
+  background-color: #ffffff;
+  color: black;
+  padding: 10px 25px;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+.button_w:hover {
+  color: #ffffff;
+  background-color: #28402b;
+}
+
+
+/* VISIT_SHOP____________________________________________________________ */
+
+.header_bottom .visit_shop {
+  height: 130px;
+  width: 100%;
+  background-image: url("../img/bg-transparent-3.png");
+  background-repeat: repeat-x;
+  background-position: top;
+  background-color: #1e3020;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f2f4f3;
+}
+
+.box_visit {
+  height: 100%;
+  margin: 0px 20px;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+}
+
+.box_visit img {
+  height: 100%;
+}
+
+
+.box_visit h2 {
+  font-weight: 400;
+}
+
+.box_visit span {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* FINE HEADER=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+
+/* WARINING INIZIO MAIN=========================================== */
+
+/* PRODUCTS______________________________________________________ */
+
+.products {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+
+.products h2 {
+  font-size: 35px;
+  font-weight: 400;
+  margin-top: 70px;
+}
+
+.products p {
+  max-width: 50%;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.products .product_list {
+  width: 80%;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* flex-basis: calc(100% / 5); */
+}
+
+
+.products .product_list li {
+  list-style: none;
+  flex-basis: calc(100% / 5);
+  text-align: center;
+  cursor: pointer;
+}
+
+.products .product_list li h3 {
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+
+/* lista mangimi */
+
+.products .food_list {
+  width: 80%;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.products .food_list li {
+  height: 500px;
+  /* min-width: 300px */
+  flex-grow: 1;
+  background-image: url("../img/bg-transparent-3.png");
+  background-repeat: repeat-x;
+  background-position: top;
+  background-color: #1e3020;
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  transition: 0.3s;
+}
+.products .food_list li:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.products .food_list li:not(:last-child) {
+  margin-right: 15px;
+}
+
+.products .food_list li h2 {
+  margin-top: 20px;
+  color: #ffffff;
+}
+
+.products .food_list li div {
+  color: #599f63;
+  font-size: 20px;
+}
+
+/* arrival */
+
+.products .arrival {
+  width: 80%;
+  height: 500px;
+  background-image: url("../img/banner-3-2x-scaled.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.products .arrival .arrival_box {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.products .arrival .arrival_box div {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.products .arrival .arrival_box h2 {
+  font-size: 50px;
+  color: #ffffff;
+  margin: 40px 0px;
 }
