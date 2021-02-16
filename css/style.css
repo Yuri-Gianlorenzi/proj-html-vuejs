@@ -701,10 +701,12 @@ header {
   background-color: #1e3020;
   position: relative;
   transition: 0.3s;
+  height: 463px
 }
 .find_info .info_merch .toy_merch:hover,
 .find_info .info_merch .food_merch:hover {
   transform: scale(1.01);
+  z-index: 1;
 }
 
 .find_info .info_merch .merch_img img {
@@ -779,6 +781,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 40px;
 }
 
 .new_products h2 {
@@ -807,4 +810,65 @@ header {
   flex-basis: 30%;
   text-align: center;
   cursor: pointer;
+  margin-bottom: 50px;
+}
+
+
+.new_products ul.arrival_list li .cover_img {
+  height: 400px;
+  position: relative;
+}
+.new_products ul.arrival_list li img {
+  height: 400px;
+}
+
+.new_products ul.arrival_list li .cover_img .click_item {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(113, 75, 35, 0.5);
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  opacity: 0;
+  transition: 0.3s;
+}
+.new_products ul.arrival_list li .cover_img .click_item:hover {
+  opacity: 1;
+}
+
+.new_products ul.arrival_list li .cover_img .star_list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.new_products ul.arrival_list li .cover_img .click_item span {
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 15px;
+}
+.new_products ul.arrival_list li .cover_img .click_item span:hover {
+  color: rgb(208, 208, 208);
+}
+
+.new_products ul.arrival_list li h3 {
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 22px;
+}
+.new_products ul.arrival_list li h3:hover {
+  color: #28402b;
+  transition: 0.2s
+}
+
+.new_products ul.arrival_list li p {
+  color: #49784d;
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 18px;
 }
