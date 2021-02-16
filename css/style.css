@@ -872,3 +872,88 @@ header {
   font-weight: 500;
   font-size: 18px;
 }
+
+
+/* WARNING FOOTER =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1e3120;
+}
+
+/* FOOTER_TOP___________________________________________________________ */
+
+.footer_top {
+  width: 80%;
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+}
+
+
+
+.footer_top .footer_logo img {
+  height: 70px;
+  margin-bottom: 40px;
+}
+
+.footer_top .footer_logo div {
+  margin-bottom: 15px;
+}
+
+.footer_top .shop_by h2,
+.footer_top .links h2 {
+
+  font-weight: 400;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+
+.footer_top .shop_by ul li,
+.footer_top .links ul li {
+  font-size: 18px;
+  font-weight: 300;
+  list-style: none;
+  margin: 30px 0px;
+}
+
+.footer_top .shop_by ul li:hover,
+.footer_top .links ul li:hover {
+  transition: 0.3s;
+  color: #49784d;
+  cursor: pointer;
+}
+
+.footer_top .subscribe {
+  max-width: 230px;
+  height: 300px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url("../img/bg-transparent-3.png");
+  background-repeat: repeat-x;
+  background-position: top;
+  background-color: #264229;
+  border-radius: 5px;
+}
+
+.footer_top .subscribe h2 {
+  font-weight: 300;
+}
+
+.footer_top .subscribe input {
+  padding: 10px;
+  border-radius: 40px;
+  background-color: #f2f4f3;
+  border: 1px solid rgba(121, 121, 121, 0);
+}
+
+
+/* INFO SOCIAL_____________________________________________________________________ */
