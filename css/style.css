@@ -677,3 +677,97 @@ header {
   line-height: 20px;
   margin: 20px 0px;
 }
+
+/* FIND_INFO _____________________________________________________________ */
+
+.find_info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.find_info .info_merch {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.find_info .info_merch .toy_merch,
+.find_info .info_merch .food_merch {
+  flex-basis: calc(50% - 1px);
+  background-color: #1e3020;
+  position: relative;
+  transition: 0.3s;
+}
+.find_info .info_merch .toy_merch:hover,
+.find_info .info_merch .food_merch:hover {
+  transform: scale(1.01);
+}
+
+.find_info .info_merch .merch_img img {
+  width: 100%;
+}
+
+.find_info .info_merch .merch_info {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+}
+
+.merch_info p {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.merch_info h2 {
+  font-size: 50px;
+  font-weight: 400;
+  margin: 30px 0px;
+}
+
+
+
+
+
+.find_info .info_services {
+  width: 100%;
+  height: 200px;
+  background-image: url("../img/bg-transparent-3.png");
+  background-repeat: repeat-x;
+  background-position: top;
+  background-color: #1e3020;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+
+.find_info .info_services ul.list_services {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.find_info .info_services ul.list_services li {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.find_info .info_services ul.list_services li i {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
