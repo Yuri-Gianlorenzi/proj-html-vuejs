@@ -18,44 +18,6 @@
 
       <div id="app" class="container">
 
-        <!-- mettiamo la sezione fuori, per poterla fare in sticky su tutta la pagina -->
-        <!-- <section class="header_nav sticky_nav">
-
-          <ul class="nav_list">
-            <li class="nav_home">
-              Home <i class="fas fa-chevron-down"></i>
-              <div class="nav_drop">
-                <ul>
-                  <li>ciaociaohieviuwsgrvui</li>
-                  <li>ciao</li>
-                  <li>ciao</li>
-                  <li>ciao</li>
-                </ul>
-              </div>
-            </li>
-            <li class="nav_shop">
-              Shop <i class="fas fa-chevron-down"></i>
-              <div class="nav_drop">
-                <ul>
-                  <li>ciaociaohieviuwsgrvui</li>
-                  <li>ciao</li>
-                  <li>ciao</li>
-                  <li>ciao</li>
-                </ul>
-              </div>
-            </li>
-            <li>About</li>
-            <li>Blog</li>
-            <li>Contact</li>
-            <li class="nav_brand">
-              Shop by Brand <i class="fas fa-chevron-down"></i>
-              <div class="brand_drop">
-
-              </div>
-            </li>
-          </ul>
-
-        </section> -->
 
         <header>
 
@@ -150,7 +112,7 @@
             </div>
             <!-- fine jumbotron -->
 
-            <div class="visit_shop">
+            <div class="visit_shop" @v-scroll="updateScroll" :class="{sticky_shop : scrollPosition > 675}">
               <div class="box_visit">
                 <img src="img/food-transparent-5.png" alt="">
               </div>

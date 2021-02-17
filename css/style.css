@@ -259,6 +259,15 @@ header {
   color: #f2f4f3;
 }
 
+.header_bottom .visit_shop.sticky_shop {
+  height: 80px;
+  position: fixed;
+  width: 100%;
+  top: 60px;
+  z-index: 3;
+  font-size: 14px;
+}
+
 .box_visit {
   height: 100%;
   margin: 0px 20px;
