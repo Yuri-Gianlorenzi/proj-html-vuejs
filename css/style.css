@@ -151,6 +151,7 @@ header {
   transition: 0.3s;
   /* background-color: #59b742; */
   /* color: #ffffff; */
+  z-index: 3;
 }
 
 /* FINE HEADER_NAV_________________________________________________________________ */
@@ -171,6 +172,7 @@ header {
   justify-content: center;
   align-items: center;
   color: #f2f4f3;
+  position: relative;
 }
 
 .header_bottom .services .list_services {
@@ -189,6 +191,67 @@ header {
   font-weight: 500;
 }
 
+.header_bottom .services .demos {
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #ffffff;
+  color: #33475b;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 4;
+}
+
+.header_bottom .services .demos.sticky_demos {
+  /* width: 100%; */
+  position: fixed;
+  top: 150px;
+}
+
+.header_bottom .services .demos i {
+  font-size: 25px;
+}
+
+.header_bottom .services .demos span {
+  font-weight: 300;
+  font-size: 15px;
+}
+
+
+.header_bottom .services .by_now {
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  top: 85px;
+  right: 15px;
+  background-color: #ffffff;
+  color: #33475b;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 4;
+}
+
+.header_bottom .services .by_now.sticky_buy {
+  position: fixed;
+  top: 230px;
+}
+
+.header_bottom .services .by_now i {
+  font-size: 25px;
+}
+
+.header_bottom .services .by_now span {
+  font-weight: 300;
+  font-size: 14px;
+}
 
 /* JUMBOTRON______________________________________ */
 .header_bottom .jumbotron {
@@ -292,7 +355,7 @@ header {
 
 /* FINE HEADER=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 
-/* WARINING INIZIO MAIN=========================================== */
+/* WARNING INIZIO MAIN=========================================== */
 
 /* PRODUCTS______________________________________________________ */
 

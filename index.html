@@ -47,7 +47,7 @@
           </section>
           <!-- fine header_top -->
 
-          <section @v-scoll="updateScroll" class="header_nav" :class="{sticky_nav : scrollPosition > 73}">
+          <section class="header_nav" @v-scroll="updateScroll"  :class="{sticky_nav : scrollPosition > 73}">
 
             <ul class="nav_list">
               <li class="nav_home">
@@ -95,6 +95,16 @@
                 <li><span><i class="far fa-clock"></i></span> See our <span>store hours</span> and services</li>
                 <li><span><i class="fas fa-check"></i></span> We price match to give you the <span>best deals</span></li>
               </ul>
+
+              <div class="demos" @v-scroll="updateScroll" :class="{sticky_demos : scrollPosition > 73}">
+                <i class="far fa-folder-open"></i>
+                <span>Demos</span>
+              </div>
+
+              <div class="by_now" @v-scroll="updateScroll" :class="{sticky_buy : scrollPosition > 75}">
+                <i class="fas fa-shopping-cart"></i>
+                <span>Buy Now</span>
+              </div>
 
             </div>
             <!-- fine services -->
