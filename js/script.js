@@ -13,6 +13,10 @@ let app = new Vue({
     updateScroll () {
       this.scrollPosition = window.scrollY;
       console.log(this.scrollPosition);
+    },//updateScroll
+
+    top () {
+      document.documentElement.scrollTop = 0;
     }
   }//fine methods
 });//fine vue
