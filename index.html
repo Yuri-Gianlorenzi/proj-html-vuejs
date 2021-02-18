@@ -131,44 +131,20 @@
                 <img :src="type.img" :alt="type.name">
                 <h3>{{type.name}}</h3>
               </li>
-
-              <!-- <li>
-                <img src="img/cuccia300.jpg" alt="">
-                <h3>Bed (1)</h3>
-              </li>
-              <li>
-                <img src="img/osso300.jpg" alt="">
-                <h3>Food (6)</h3>
-              </li>
-              <li>
-                <img src="img/palline300.jpg" alt="">
-                <h3>Toys (6)</h3>
-              </li>
-              <li>
-                <img src="img/borsa300.jpg" alt="">
-                <h3>Transport (7)</h3>
-              </li> -->
+              <!-- qui si potrebbe aggiungere anche il numero di prodotti presenti per ogni categoria -->
             </ul>
 
             <ul class="food_list">
-              <li>
-                <h2>Kibble</h2>
+
+              <li v-for="(kibble, indexKibble) in whatKibble">
+                <h2>{{kibble.name}}</h2>
                 <div>Dry dog food</div>
-                <img src="img\food-transparent-18-200x210.png" alt="">
+                <!-- qui tramite vue si riesce anxche a differire il prodotto per genere di destinatione (cani, gatti, conigli...) -->
+                <img :src="kibble.img" :alt="kibble.name">
                 <span class="button_g">Learn more about us</span>
+
               </li>
-              <li>
-                <h2>Kibble</h2>
-                <div>Dry dog food</div>
-                <img src="img\food-transparent-17-200x210.png" alt="">
-                <span class="button_g">Learn more about us</span>
-              </li>
-              <li>
-                <h2>Kibble</h2>
-                <div>Dry dog food</div>
-                <img src="img\food-transparent-16-200x210.png" alt="">
-                <span class="button_g">Learn more about us</span>
-              </li>
+
             </ul>
 
             <div class="arrival">

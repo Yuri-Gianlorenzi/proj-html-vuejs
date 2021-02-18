@@ -23,6 +23,20 @@ let app = new Vue({
         name : 'Transport',
         img : 'img/borsa300.jpg'
       }
+    ],
+    whatKibble : [
+      {
+        name : 'Kibble 1',
+        img : 'img/food-transparent-18-200x210.png'
+      },
+      {
+        name : 'Kibble 2',
+        img : 'img/food-transparent-17-200x210.png'
+      },
+      {
+        name : 'Kibble 3',
+        img : 'img/food-transparent-16-200x210.png'
+      }
     ]
   },//fine data
 
