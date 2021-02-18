@@ -595,6 +595,9 @@ header {
 .items .items_list ul li .cover_img .click_item span {
   text-transform: uppercase;
 }
+.items .items_list ul li .cover_img .click_item span:hover {
+  color: rgb(208, 208, 208); 
+}
 
 .items .items_list li h3 {
   margin-top: 20px;

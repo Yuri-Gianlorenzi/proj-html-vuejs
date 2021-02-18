@@ -84,7 +84,12 @@ let app = new Vue({
     showWhat(index) {
       this.indexSelected = index;
 
-    }//fine showWhat
+    },//fine showWhat
+
+    addCart(bestIndex) {
+      this.cart.push(this.whatBest[bestIndex]);
+      console.log(this.cart);
+    }
 
   }//fine methods
 });//fine vue

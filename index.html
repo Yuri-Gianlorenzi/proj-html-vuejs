@@ -176,7 +176,7 @@
                   <div class="cover_img">
                     <img :src="best.img" :alt="best.name">
                     <div class="click_item">
-                      <span>add to cart </span> / <span> quick view</span>
+                      <span @click="addCart(bestIndex)">add to cart </span> / <span> quick view</span>
                     </div>
                   </div>
                   <h3>{{best.name}}</h3>
