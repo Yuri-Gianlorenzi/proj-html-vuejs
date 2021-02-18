@@ -84,6 +84,32 @@ let app = new Vue({
         from : 'Parigi'
       },
     ],
+    whatTips : [
+      {
+        title : 'How to  loose leash walk your dog',
+        img : 'img/blog-1-400x400.jpg',
+        content : '',
+        data : '01/02/2021'
+      },
+      {
+        title : 'Stop cats from scratching furniture',
+        img : 'img/blog-2-400x400.jpg',
+        content : '',
+        data : '10/02/2021'
+      },
+      {
+        title : 'Where to buy the best pet food to eat a lot',
+        img : 'img/blog-3-400x400.jpg',
+        content : '',
+        data : '22/01/2021'
+      },
+      {
+        title : 'Proper care for your pet toys for play',
+        img : 'img/blog-4-400x400.jpg',
+        content : '',
+        data : '16/08/1993'
+      }
+    ],
     cart : [],
     userMail : '',
     userData : [

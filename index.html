@@ -224,53 +224,18 @@
             <div class="tips_list">
               <ul>
 
-                <li>
+                <li v-for="(tips, indexTips) in whatTips">
                   <div class="cover_img">
-                    <img src="img/blog-1-400x400.jpg" alt="">
+                    <img :src="tips.img" :alt="tips.title">
                     <div class="click_item">
-                      <div class="blog_title">How to 'loose leash walk'your dog</div>
+                      <div class="blog_title">{{tips.title}}</div>
                       <div>Tips & tricks</div>
                     </div>
                   </div>
-                  <h3>How to 'loose leash walk'your dog</h3>
-                  <p>Data</p>
+                  <h3>{{tips.title}}</h3>
+                  <p>{{tips.data}}</p>
                 </li>
 
-                <li>
-                  <div class="cover_img">
-                    <img src="img/blog-2-400x400.jpg" alt="">
-                    <div class="click_item">
-                      <div class="blog_title">Stop cats from scratching furniture</div>
-                      <div>Tips & tricks</div>
-                    </div>
-                  </div>
-                  <h3>Stop cats from scratching furniture</h3>
-                  <p>$Date</p>
-                </li>
-
-                <li>
-                  <div class="cover_img">
-                    <img src="img/blog-3-400x400.jpg" alt="">
-                    <div class="click_item">
-                      <div class="blog_title">Where to buy the best pet food to eat a lot</div>
-                      <div>Tips & tricks</div>
-                    </div>
-                  </div>
-                  <h3>Where to buy the best pet food to eat a lot</h3>
-                  <p>Date</p>
-                </li>
-
-                <li>
-                  <div class="cover_img">
-                    <img src="img/blog-4-400x400.jpg" alt="">
-                    <div class="click_item">
-                      <div class="blog_title">Proper care for your pet toys for play</div>
-                      <div>Tips & tricks</div>
-                    </div>
-                  </div>
-                  <h3>Proper care for your pet toys for play</h3>
-                  <p>Date</p>
-                </li>
 
               </ul>
             </div>
