@@ -50,6 +50,7 @@
           </section>
           <!-- fine header_top -->
 
+          <!-- per aggiungere le classe, utilizziamo un v-scroll e una condizione -->
           <section class="header_nav" @v-scroll="updateScroll"  :class="{sticky_nav : scrollPosition > 73}">
 
             <!-- lista nav header creata con vue -->
@@ -98,6 +99,7 @@
             </div>
             <!-- fine jumbotron -->
 
+            <!-- per aggiungere le classe, utilizziamo un v-scroll e una condizione -->
             <div class="visit_shop" @v-scroll="updateScroll" :class="{sticky_shop : scrollPosition > 675}">
               <div class="box_visit">
                 <img src="img/food-transparent-5.png" alt="">
@@ -123,20 +125,25 @@
         <main>
 
           <section class="products">
+
             <h2>Browse by category</h2>
             <p>Augue purus et, tincidunt condimentum mauris. At nibh ruturm mi in. Nisi, vitae interdum eleifend dui, consequat nulla rhoncus dictum. Viverra.</p>
             <ul class="product_list">
 
+              <!-- lista creata con vue: è stato creato un data apposito dai cui il v-for cicla gli elementi, restyituendo per ogni li un elemento diverso con relative caratteristiche -->
               <li v-for="(type, indexType) in whatCategory">
+
                 <img :src="type.img" :alt="type.name">
                 <h3>{{type.name}}</h3>
+
               </li>
               <!-- qui si potrebbe aggiungere anche il numero di prodotti presenti per ogni categoria -->
             </ul>
 
             <ul class="food_list">
-
+              <!-- lista creata con vue: è stato creato un data apposito dai cui il v-for cicla gli elementi, restyituendo per ogni li un elemento diverso con relative caratteristiche -->
               <li v-for="(kibble, indexKibble) in whatKibble">
+
                 <h2>{{kibble.name}}</h2>
                 <div>Dry dog food</div>
                 <!-- qui tramite vue si riesce anxche a differire il prodotto per genere di destinatione (cani, gatti, conigli...) -->
@@ -148,16 +155,19 @@
             </ul>
 
             <div class="arrival">
+
               <div class="arrival_box">
                 <div>Find the best animal supplies</div>
                 <h2>New arrivals weekly</h2>
                 <span class="button_w">Learn more about us</span>
               </div>
+
             </div>
           </section>
           <!-- fine products -->
 
           <section class="items">
+
             <div class="items_title">
               <div class="box_title">
                 <p>All-time best sellers</p>
@@ -171,11 +181,12 @@
             <div class="items_list">
               <ul>
 
-
+                <!-- lista creata con vue: è stato creato un data apposito dai cui il v-for cicla gli elementi, restyituendo per ogni li un elemento diverso con relative caratteristiche -->
                 <li v-for="(best, bestIndex) in whatBest">
                   <div class="cover_img">
                     <img :src="best.img" :alt="best.name">
                     <div class="click_item">
+                      <!-- funzione creata per dare la possibilità all'utente di salvare nel carrello l'oggetto di suo interesse -->
                       <span @click="addCart(bestIndex)">add to cart </span> / <span> quick view</span>
                     </div>
                   </div>
@@ -190,10 +201,11 @@
           <!-- fine items -->
 
           <section class="testimonials">
+
             <div class="box_testimonials">
               <h2>Users testimonials</h2>
               <ul class="testimonials_list">
-
+                <!-- lista creata con vue: è stato creato un data apposito dai cui il v-for cicla gli elementi, restyituendo per ogni li un elemento diverso con relative caratteristiche -->
                 <li v-for="(person, indexPerson) in testimonials">
                   <img :src="person.img" :alt="person.name">
                   <p>{{person.message}}</p>
@@ -203,10 +215,12 @@
               </ul>
             </div>
             <!-- fine box testimonials -->
+
             <div class="box_newsletter">
               <h2>Join our newsletter</h2>
               <p>Iscriviti alla nostra newsletter per rimanere sempre aggiornato su tutti i nostri prodotti, specialmente per i nuovi arrivi</p>
               <div class="subs_box">
+                <!-- funzione creata per dare la possibilità di inserire la mail nei suoi data, funzione da sviluppare in generale -->
                 <input type="text" name="email" id='email' v-model="userMail" placeholder="Insert your email ...*" @keyup.enter="addMail">
                 <label for="email"><span class="button_g" @click="clickAddMail">Subscribe</span></label>
               </div>
@@ -223,7 +237,7 @@
 
             <div class="tips_list">
               <ul>
-
+                <!-- lista creata con vue: è stato creato un data apposito dai cui il v-for cicla gli elementi, restyituendo per ogni li un elemento diverso con relative caratteristiche -->
                 <li v-for="(tips, indexTips) in whatTips">
                   <div class="cover_img">
                     <img :src="tips.img" :alt="tips.title">
@@ -311,6 +325,7 @@
                   <img :src="obj.img" :alt="obj.name">
                   <div class="click_item">
                     <ul class="star_list">
+                      <!-- LISTA PER EVENTUALMENTE SVILUPPARE IL VOTO MEDIO CON STELLE -->
                       <li v-for="a in 5"><i class="fas fa-star"></i></li>
                     </ul>
                     <div><span @click="newAddCart(indexNew)">add to cart </span> / <span> quick view</span></div>

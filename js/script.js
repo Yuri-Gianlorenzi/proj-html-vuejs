@@ -160,37 +160,44 @@ let app = new Vue({
   },//fine data
 
   mounted() {
+    //per fare in modo che la pagina "ascolti" lo scroll, e a determinati valori, compiere determinate azioni quali trascinarsi dietro gli elementi fixed
     window.addEventListener('scroll', this.updateScroll);
     console.log(this.userMail);
   },//fine mounted
 
   methods : {
     updateScroll () {
+      //per ascoltare lo scroll della pagina
       this.scrollPosition = window.scrollY;
       console.log(this.scrollPosition);
     },//updateScroll
 
     top () {
+      // per riportare l'utente all'inizio della pagina
       document.documentElement.scrollTo(0, 0);
     },//fine top
 
     showWhat(index) {
+      //per lasciare "indicizzato" quello che l'utente ha selezionato
       this.indexSelected = index;
 
     },//fine showWhat
 
     addCart(bestIndex) {
+      //per aggiungere l'elemento desiderato dentro l'array vuoto, creato apposta come carrello
       this.cart.push(this.whatBest[bestIndex]);
       console.log(this.cart);
     },//addCart
 
     newAddCart(indexNew) {
+      //per aggiungere l'elemento desiderato dentro l'array vuoto, creato apposta come carrello
       this.cart.push(this.whatNew[indexNew]);
       console.log(this.cart);
-      
+
     },//add cart new
 
     addMail() {
+      //per aggiungere al data user, l'email digitata dall'utente 
       this.userData[0].mail = this.userMail;
       console.log(this.userData);
       this.userMail = '';
