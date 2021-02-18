@@ -2,7 +2,9 @@
 let app = new Vue({
   el : '#app',
   data : {
-    scrollPosition: null
+    scrollPosition: null,
+    whatSelect : ['Home', 'Shop', 'About', 'Blog','Contact', 'Shop by Brand'],
+    indexSelected : ''
   },//fine data
 
   mounted() {
@@ -17,6 +19,12 @@ let app = new Vue({
 
     top () {
       document.documentElement.scrollTo(0, 0);
-    }//fine top
+    },//fine top
+
+    showWhat(index) {
+      this.indexSelected = index;
+
+    }//fine showWhat
+    
   }//fine methods
 });//fine vue

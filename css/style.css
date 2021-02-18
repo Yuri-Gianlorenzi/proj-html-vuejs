@@ -141,6 +141,9 @@ header {
   padding: 0px 20px;
   font-weight: 500;
 }
+.header_nav ul.nav_list li.clicked {
+  color: black;
+}
 
 .header_nav ul.nav_list li:hover {
   color: black;
@@ -179,7 +182,7 @@ header {
   display: block;
   transition: 0.3s;
   z-index: 6;
-  
+
   /* background-color: #59b742; */
   /* color: #ffffff; */
 }
