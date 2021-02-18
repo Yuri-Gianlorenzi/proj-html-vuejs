@@ -193,21 +193,13 @@
             <div class="box_testimonials">
               <h2>Users testimonials</h2>
               <ul class="testimonials_list">
-                <li>
-                  <img src="img\avatar-1-200x200.jpg" alt="">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</p>
-                  <span>Lisa Smith, ThemeFusion</span>
+
+                <li v-for="(person, indexPerson) in testimonials">
+                  <img :src="person.img" :alt="person.name">
+                  <p>{{person.message}}</p>
+                  <span>{{person.name}}, {{person.from}}</span>
                 </li>
-                <li>
-                  <img src="img\avatar-3-200x200.jpg" alt="">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-                  <span>Lisa Smith, ThemeFusion</span>
-                </li>
-                <li>
-                  <img src="img\avatar-4-200x200.jpg" alt="">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                  <span>Lisa Smith, ThemeFusion</span>
-                </li>
+
               </ul>
             </div>
             <!-- fine box testimonials -->

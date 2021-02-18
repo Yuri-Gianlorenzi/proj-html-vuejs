@@ -64,6 +64,26 @@ let app = new Vue({
         price : '$12.00'
       }
     ],
+    testimonials : [
+      {
+        name : 'Lisa Smith',
+        img : 'img/avatar-1-200x200.jpg',
+        message : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..',
+        from : 'Delaware'
+      },
+      {
+        name : 'Marta Rossi',
+        img : 'img/avatar-3-200x200.jpg',
+        message : 'Belli i guinzagli, riesco a metcharli tutti con i miei outfit',
+        from : 'Borgo A Buggiano'
+      },
+      {
+        name : 'Giorgio Lafayette',
+        img : 'img/avatar-4-200x200.jpg',
+        message : 'Il cibo è davvero ottimo, il mio cane è veramente contento, a tal punto che si mangia anche i croccantini del gatto',
+        from : 'Parigi'
+      },
+    ],
     cart : []
   },//fine data
 
