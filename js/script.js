@@ -37,7 +37,34 @@ let app = new Vue({
         name : 'Kibble 3',
         img : 'img/food-transparent-16-200x210.png'
       }
-    ]
+    ],
+    whatBest : [
+      {
+        name : 'Transport Cage',
+        img : 'img/product-21-400x400.jpg',
+        oldPrice : '',
+        price : '$25.00'
+      },
+      {
+        name : 'Dog leash',
+        img : 'img/product-20-400x400.jpg',
+        oldPrice : '',
+        price : '$25.00'
+      },
+      {
+        name : 'Animal transport cage',
+        img : 'img/product-16-400x400.jpg',
+        oldPrice : '$25.00',
+        price : '$12.00'
+      },
+      {
+        name : 'Colorful cat leash',
+        img : 'img/product-11-400x400.jpg',
+        oldPrice : '',
+        price : '$12.00'
+      }
+    ],
+    cart : []
   },//fine data
 
   mounted() {
