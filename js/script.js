@@ -184,6 +184,12 @@ let app = new Vue({
       console.log(this.cart);
     },//addCart
 
+    newAddCart(indexNew) {
+      this.cart.push(this.whatNew[indexNew]);
+      console.log(this.cart);
+      
+    },//add cart new
+
     addMail() {
       this.userData[0].mail = this.userMail;
       console.log(this.userData);
