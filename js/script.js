@@ -84,11 +84,20 @@ let app = new Vue({
         from : 'Parigi'
       },
     ],
-    cart : []
+    cart : [],
+    userMail : '',
+    userData : [
+      {
+        name : '',
+        surname : '',
+        mail : ''
+      }
+    ]
   },//fine data
 
   mounted() {
     window.addEventListener('scroll', this.updateScroll);
+    console.log(this.userMail);
   },//fine mounted
 
   methods : {
@@ -109,7 +118,15 @@ let app = new Vue({
     addCart(bestIndex) {
       this.cart.push(this.whatBest[bestIndex]);
       console.log(this.cart);
-    }
+    },//addCart
+
+    addMail() {
+      this.userData[0].mail = this.userMail;
+      console.log(this.userData);
+      this.userMail = '';
+    },//fine addMail
+
+    clickAddMail () {addMail()}//fine clickAddMail
 
   }//fine methods
 });//fine vue

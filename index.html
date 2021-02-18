@@ -207,8 +207,8 @@
               <h2>Join our newsletter</h2>
               <p>Iscriviti alla nostra newsletter per rimanere sempre aggiornato su tutti i nostri prodotti, specialmente per i nuovi arrivi</p>
               <div class="subs_box">
-                <input type="text" name="" value="" placeholder="Insert your email ...*">
-                <label for=""><span class="button_g">Subscribe</span></label>
+                <input type="text" name="email" id='email' v-model="userMail" placeholder="Insert your email ...*" @keyup.enter="addMail">
+                <label for="email"><span class="button_g" @click="clickAddMail">Subscribe</span></label>
               </div>
             </div>
 
