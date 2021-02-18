@@ -563,11 +563,7 @@
           <section class="info_social">
             <div class="nav_footer">
               <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Blog</li>
-                <li>Contact</li>
-                <li>Shop</li>
+                <li v-for="(what, index) in whatSelect" :class="(index == indexSelected) ? 'clicked' : ''" @click="showWhat(index)">{{what}}</li>
               </ul>
             </div>
 

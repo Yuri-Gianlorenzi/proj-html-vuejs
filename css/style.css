@@ -1096,6 +1096,9 @@ footer {
   cursor: pointer;
   font-size: 18px;
 }
+.info_social .nav_footer ul li.clicked {
+  color: #49784d;
+}
 
 .info_social .nav_footer ul li:hover {
   transition: 0.3s;
@@ -1115,6 +1118,9 @@ footer {
   padding: 0px 20px;
   cursor: pointer;
   font-size: 18px;
+}
+.info_social .nav_social ul li.clicked {
+  color: #49784d;
 }
 .info_social .nav_social ul li:hover {
   transition: 0.3s;
