@@ -64,6 +64,44 @@ let app = new Vue({
         price : '$12.00'
       }
     ],
+    whatNew : [
+      {
+        name : 'Colorful balls',
+        img : 'img/product-2-500x500.jpg',
+        price : '$25.00',
+        vote : ''
+      },
+      {
+        name : 'Bones',
+        img : 'img/product-3-500x500.jpg',
+        price : '$25.00',
+        vote : ''
+      },
+      {
+        name : 'Animal transport bag',
+        img : 'iimg/product-4-500x500.jpg',
+        price : '$12.00',
+        vote : ''
+      },
+      {
+        name : 'Animal transport cage',
+        img : 'img/product-5-500x500.jpg',
+        price : '$12.00',
+        vote : ''
+      },
+      {
+        name : 'Colorful cat bed',
+        img : 'img/product-8-500x500.jpg',
+        price : '$12.00',
+        vote : ''
+      },
+      {
+        name : 'Animal plastic cage',
+        img : 'img/product-10-500x500.jpg',
+        price : '$12.00',
+        vote : ''
+      }
+    ],
     testimonials : [
       {
         name : 'Lisa Smith',

@@ -304,112 +304,20 @@
             <span>Latest Product</span>
 
             <ul class="arrival_list">
-              <li>
-                <div class="cover_img">
-                  <img src="img/product-2-500x500.jpg" alt="">
-                  <div class="click_item">
-                    <ul class="star_list">
-                      <li><i class="fas fa-star"></i></li>
-                      <li><i class="fas fa-star"></i></li>
-                      <li><i class="fas fa-star"></i></li>
-                      <li><i class="fas fa-star"></i></li>
-                      <li><i class="fas fa-star"></i></li>
-                    </ul>
-                    <div><span>add to cart </span> / <span> quick view</span></div>
-                  </div>
-                </div>
-                <h3>Transport cage</h3>
-                <p>$25.00</p>
-              </li>
 
-              <li>
-                <div class="cover_img">
-                  <img src="img/product-3-500x500.jpg" alt="">
-                  <div class="click_item">
-                    <ul class="star_list">
-                      <li><i class="fas fa-star"></i></li>
-                      <li><i class="fas fa-star"></i></li>
-                      <li><i class="fas fa-star"></i></li>
-                      <li><i class="fas fa-star"></i></li>
-                      <li><i class="fas fa-star"></i></li>
-                    </ul>
-                    <div><span>add to cart </span> / <span> quick view</span></div>
-                  </div>
-                </div>
-                <h3>Dog leash</h3>
-                <p>$25.00</p>
-              </li>
 
-              <li>
+              <li v-for="(obj, indexNew) in whatNew">
                 <div class="cover_img">
-                  <img src="img/product-4-500x500.jpg" alt="">
+                  <img :src="obj.img" :alt="obj.name">
                   <div class="click_item">
                     <ul class="star_list">
-                      <li><i class="fas fa-star"></i></li>
-                      <li><i class="fas fa-star"></i></li>
-                      <li><i class="fas fa-star"></i></li>
-                      <li><i class="fas fa-star"></i></li>
-                      <li><i class="fas fa-star"></i></li>
+                      <li v-for="a in 5"><i class="fas fa-star"></i></li>
                     </ul>
                     <div><span>add to cart </span> / <span> quick view</span></div>
                   </div>
                 </div>
-                <h3>Animal transport cage</h3>
-                <p>$12.00</p>
-              </li>
-
-              <li>
-                <div class="cover_img">
-                  <img src="img/product-5-500x500.jpg" alt="">
-                  <div class="click_item">
-                    <ul class="star_list">
-                      <li><i class="fas fa-star"></i></li>
-                      <li><i class="fas fa-star"></i></li>
-                      <li><i class="fas fa-star"></i></li>
-                      <li><i class="fas fa-star"></i></li>
-                      <li><i class="fas fa-star"></i></li>
-                    </ul>
-                    <div><span>add to cart </span> / <span> quick view</span></div>
-                  </div>
-                </div>
-                <h3>Colorful cat leash</h3>
-                <p>$12.00</p>
-              </li>
-
-              <li>
-                <div class="cover_img">
-                  <img src="img/product-8-500x500.jpg" alt="">
-                  <div class="click_item">
-                    <ul class="star_list">
-                      <li><i class="fas fa-star"></i></li>
-                      <li><i class="fas fa-star"></i></li>
-                      <li><i class="fas fa-star"></i></li>
-                      <li><i class="fas fa-star"></i></li>
-                      <li><i class="fas fa-star"></i></li>
-                    </ul>
-                    <div><span>add to cart </span> / <span> quick view</span></div>
-                  </div>
-                </div>
-                <h3>Colorful cat leash</h3>
-                <p>$12.00</p>
-              </li>
-
-              <li>
-                <div class="cover_img">
-                  <img src="img/product-10-500x500.jpg" alt="">
-                  <div class="click_item">
-                    <ul class="star_list">
-                      <li><i class="fas fa-star"></i></li>
-                      <li><i class="fas fa-star"></i></li>
-                      <li><i class="fas fa-star"></i></li>
-                      <li><i class="fas fa-star"></i></li>
-                      <li><i class="fas fa-star"></i></li>
-                    </ul>
-                    <div><span>add to cart </span> / <span> quick view</span></div>
-                  </div>
-                </div>
-                <h3>Colorful cat leash</h3>
-                <p>$12.00</p>
+                <h3>{{obj.name}}</h3>
+                <p>{{obj.price}}</p>
               </li>
 
             </ul>
