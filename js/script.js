@@ -5,7 +5,25 @@ let app = new Vue({
     scrollPosition: null,
     whatSelect : ['Home', 'Shop', 'About', 'Blog','Contact', 'Shop by Brand'],
     indexSelected : '',
-    whatSocial : ['fa-facebook-f', 'fa-twitter', 'fa-instagram', 'fa-github']
+    whatSocial : ['fa-facebook-f', 'fa-twitter', 'fa-instagram', 'fa-github'],
+    whatCategory : [
+      {
+        name : 'Bed',
+        img : 'img/cuccia300.jpg'
+      },
+      {
+        name : 'Food',
+        img : 'img/osso300.jpg'
+      },
+      {
+        name : 'Toys',
+        img : 'img/palline300.jpg'
+      },
+      {
+        name : 'Transport',
+        img : 'img/borsa300.jpg'
+      }
+    ]
   },//fine data
 
   mounted() {
