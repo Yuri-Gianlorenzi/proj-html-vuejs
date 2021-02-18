@@ -4,7 +4,8 @@ let app = new Vue({
   data : {
     scrollPosition: null,
     whatSelect : ['Home', 'Shop', 'About', 'Blog','Contact', 'Shop by Brand'],
-    indexSelected : ''
+    indexSelected : '',
+    whatSocial : ['fa-facebook-f', 'fa-twitter', 'fa-instagram', 'fa-github']
   },//fine data
 
   mounted() {
@@ -25,6 +26,6 @@ let app = new Vue({
       this.indexSelected = index;
 
     }//fine showWhat
-    
+
   }//fine methods
 });//fine vue

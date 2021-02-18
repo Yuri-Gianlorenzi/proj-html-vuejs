@@ -569,12 +569,10 @@
 
             <div class="nav_social">
               <ul>
-                <li><i class="fab fa-facebook-f"></i></li>
-                <li><i class="fab fa-twitter"></i></li>
-                <li><i class="fab fa-instagram"></i></li>
-                <li><i class="fab fa-github"></i></li>
+                <li v-for="(social, index) in whatSocial"><i :class="'fab '+social"></i></li>
               </ul>
             </div>
+            
           </section>
           <!-- fine info_social -->
 
