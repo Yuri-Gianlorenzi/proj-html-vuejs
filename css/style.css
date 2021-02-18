@@ -26,15 +26,20 @@ body {
   height: 50px;
 
   color: #ffffff;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.85);
 
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 5px;
+  z-index: 4;
 }
 .scroll_up.none {
   display: none;
+}
+
+.scroll_up i {
+  cursor: pointer;
 }
 
 /* WARNING HEADER======================================================= */
@@ -155,6 +160,8 @@ header {
   background-color: #ffffff;
   /* opacity: 0; */
   display: none;
+  /* z-index: 6; */
+
 }
 
 .nav_drop ul {
@@ -171,9 +178,10 @@ header {
   /* opacity: 1; */
   display: block;
   transition: 0.3s;
+  z-index: 6;
+  
   /* background-color: #59b742; */
   /* color: #ffffff; */
-  z-index: 3;
 }
 
 /* FINE HEADER_NAV_________________________________________________________________ */
@@ -227,6 +235,7 @@ header {
   justify-content: space-around;
   align-items: center;
   z-index: 4;
+  box-shadow: 5px 5px 5px #888888;
 }
 
 .header_bottom .services .demos.sticky_demos {
@@ -259,6 +268,7 @@ header {
   justify-content: space-around;
   align-items: center;
   z-index: 4;
+  box-shadow: 5px 5px 5px #888888;
 }
 
 .header_bottom .services .by_now.sticky_buy {
@@ -272,7 +282,7 @@ header {
 
 .header_bottom .services .by_now span {
   font-weight: 300;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 /* JUMBOTRON______________________________________ */
@@ -349,7 +359,7 @@ header {
   position: fixed;
   width: 100%;
   top: 60px;
-  z-index: 3;
+  z-index: 2;
   font-size: 14px;
 }
 
@@ -1107,6 +1117,8 @@ footer {
   transition: 0.3s;
   color: #49784d;
 }
+
+
 
 /* FOOTER BOTTOM __________________________________________________ */
 

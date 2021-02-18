@@ -16,7 +16,7 @@ let app = new Vue({
     },//updateScroll
 
     top () {
-      document.documentElement.scrollTop = 0;
-    }
+      document.documentElement.scrollTo(0, 0);
+    }//fine top
   }//fine methods
 });//fine vue
